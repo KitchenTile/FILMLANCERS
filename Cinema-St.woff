@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Cinema St Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cinema St Regular'), url('./fonts/cinema_st.woff') format('woff');
+    }
