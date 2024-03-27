@@ -1,0 +1,18 @@
+.image-link{
+    display: inline-block;
+    position: relative;
+}
+
+.image-link:hover img {
+    transform: scale(1.05);
+}
+
+.h1{
+    color: white;
+    margin: 10px 0px 35px 0px;
+}
+
+.image{
+    width: 93%;
+    height: auto;
+}
