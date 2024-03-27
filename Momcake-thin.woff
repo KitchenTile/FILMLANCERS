@@ -1,6 +1,0 @@
-@font-face {
-    font-family: 'Momcake Thin';
-    font-weight: normal;
-    font-style: normal;
-    src: local('Momcake Thin'), url('./fonts/Momcake-Thin.woff') format('woff');
-    }
