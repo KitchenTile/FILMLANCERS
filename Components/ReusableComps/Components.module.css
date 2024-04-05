@@ -1,0 +1,16 @@
+
+.components{
+    padding: 10px;
+    margin: 75px ;
+    border-radius: 10px;
+    background-color: #0c0807;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: #ff9138;
+    font-size: 20px;
+    padding: 20px 40px 40px 40px;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+

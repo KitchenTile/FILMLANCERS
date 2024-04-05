@@ -1,0 +1,96 @@
+.h2{
+  color: orange;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  margin: 20px 0px 50px 0px;;
+  font-size: 50px;
+}
+.content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 10px; 
+  background: rgba(0, 0, 0, );
+  transition: opacity 0.8s ease; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+.map,
+.info,
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 100%;
+  opacity: 0; 
+  transition: opacity 0.8s ease;
+}
+
+
+.content:hover{
+  background: rgba(0, 0, 0, 0.8);
+  transition: background 0.8s ease;
+}
+
+.content:hover .map,
+.content:hover .info,
+.content:hover .reviews {
+  opacity: 1;
+  /* transition: opacity 0.8 ease;
+  transition: width 0.5 ease; */
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100vw; 
+  overflow: hidden;
+  position: relative;
+
+}
+
+.image-link {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content:hover .map:hover,
+.content:hover .info:hover,
+.content:hover .reviews:hover {
+  opacity: 1;
+  width: 70%; 
+  transition: width 0.8s ease;
+}
+
+/* .content:hover .mapframe:hover{
+  width: 550;
+  height: 350;
+} */
+
+.content:hover .map:hover ~ .info,
+.content:hover .map:hover ~ .reviews,
+.content:hover .map:hover ~ .map,
+.content:hover .info:hover ~ .reviews,
+.content:hover .reviews:hover ~ .map,
+.content:hover .reviews:hover ~ .info {
+  width: 40%; 
+  transition: width 0.8s ease;
+}
+
+
+
+
+.bar {
+  border: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 200px;
+}
