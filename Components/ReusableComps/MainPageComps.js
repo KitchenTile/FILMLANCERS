@@ -6,7 +6,7 @@ import ImageHoverComponent from "../ImagesOnHover/MainPageImage";
 const ReusComp = ({ title, text }) => {
     return (
         <div className={`${Compcss.components}`}>
-            <h2 style={{color: "#ff9138"}}>{title}</h2>
+            <h2 className={`${Compcss.title}`}>{title}</h2>
             <p>{text}</p>
         </div>
     )

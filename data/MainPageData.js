@@ -1,9 +1,9 @@
 const MainCompsData = [
-    { title: "Mission Statement",
+    { title: "MISSION STATEMENT",
      text: "When working on a film during the summer break between my second and third year of university, a wireless focus rig that we were using on set simply stopped working. The immediate upheaval of stress and anxiety became palpable on set as we struggled to find a rental house that worked for us. The 1st camera assistant (AC), who was using the wireless focus rig, was obliged to rely on skill and manually executed the remainder of the shots for the day. Watching the havoc caused by the broken equipment, I started to feel nervous about breaking into the industry after university. I soon realized that there was a gap in resources for recently graduated film industry newcomers. Wanting to fill this gap, I created FilmlancersLDN.com with the goal of synthesizing information and resources for renting kit and equipment. Please read our ‘How It Works’ article below to learn about our process!"},
-    { title: "Contact Us",
+    { title: "CONTACT US",
      text: "Contact us text"},
-    {title: "How It Works",
+    {title: "HOW IT WORKS",
      text: `After clicking the ‘Start Renting Here’ button you will find a list of departments, once choosing your desired departments you will be taken to a page with listed rental houses. Each rental house will display the location, reviews and a link to the rental house's respective home pages. These are the next steps after choosing a rental house:  
      \nImportant Notice (Legal Information Included):
      \nPRE-HIRE
@@ -22,7 +22,7 @@ const MainCompsData = [
      \n● The rental house often charges for ‘consumables used’ after the kit is checked in by technicians at the rental house. This is only done when renting perishable items that knowingly need replacing after use; for example, poly, colour gels, tapes etc.
      \n● An invoice will be issued, if applicable, for any cleaning charges or consumables used. (This can be added on to the original job sheet if it is not a first time hire.) Please Note: This is a general list and is subject to change depending on the rental house.`
     },
-    {title:"      Tips N’ Tricks for Renting",
+    {title:"TIPS N' TRICKS FOR RENTING",
     text: `This is a list of tips and tricks, gathered through interviews with rental houses, on suggestions for novice renters. Read the section below to master the nuances of renting:
     \n●	If you mix kit from rental houses on one rig it can shut the whole system down. Rental houses will test the system before it leaves the rental house, to ensure every component works together. Adding new components to that system can cause potential issues when shooting. 
     \n●	During different parts of the year, rental houses will have different amounts of kit available. It is better to rent kit during school holidays as rental houses tend to have more kit available during that time. You will additionally have a higher chance of getting a better deal during these times.

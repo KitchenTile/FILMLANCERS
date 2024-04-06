@@ -10,7 +10,7 @@ const RentAllPage = () => {
         <div className="rentalpage">
             <Header />
             <RentalSearchComp data={ AllData } />
-            <h1 className="h2">ALL RESULTS</h1>
+            <h1 className="titles">ALL RESULTS</h1>
             {AllData.map((data, index) => (
                 <ReusableRentalComp
                     key={data.index}

@@ -10,8 +10,15 @@ export const RentalCameraPage = () => {
     return(
         <div className="rentalpage">
             <Header />
-            <RentalSearchComp data={ CameraData } />
-            <h1 className="h2">ALL RESULTS</h1>
+            <div className="titlesearchbar">
+                <div className="titlecontainer">
+                    <h1 className="titles">CAMERA RENTAL</h1>
+                </div>
+                <div className="searchcontainer">
+                    <RentalSearchComp data={CameraData} />
+                </div>
+            </div>
+            <h1 className="titles">ALL RESULTS</h1>
             {CameraData.map((data, index) => (
                 <ReusableRentalComp
                     key={data.index}
@@ -22,7 +29,7 @@ export const RentalCameraPage = () => {
                 />
             ))}
         </div>
-    );
+    ); 
 };
 
 export default RentalCameraPage;

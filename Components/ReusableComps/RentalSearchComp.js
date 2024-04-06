@@ -19,14 +19,15 @@ const RentalSearchComp = ({ data }) => {
     
     return (
         <div >
-            <input 
-                type="text"
-                placeholder="Search..."
-                className="bar"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-            />
-
+            <div className="box">
+                <input 
+                    type="text"
+                    placeholder="Search..."
+                    className="input"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                />
+            </div>
             {/* {filteredData.length > 0 ? (
                 filteredData.map((item, index) => (
                 <div key={index}>
@@ -50,7 +51,7 @@ const RentalSearchComp = ({ data }) => {
             ) : (
                 <div>No results found</div>
             )} */}
-            {query !== "" ? (<h1 className="h2">SEARCH RESULTS</h1>): null}
+            {query !== "" ? (<h1 className="titles">SEARCH RESULTS</h1>): null}
             {query !== "" && filteredData.length > 0 ? (
                 filteredData.map((item, index) => (
                     <div 

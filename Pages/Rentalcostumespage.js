@@ -11,7 +11,7 @@ export const RentalCostumePage = () => {
         <div className="rentalpage">
             <Header />
             <RentalSearchComp data={ CostumeData } />
-            <h1 className="h2">ALL RESULTS</h1>
+            <h1 className="titles">ALL RESULTS</h1>
             {CostumeData.map((data, index) => (
                 <ReusableRentalComp
                     key={data.index}

@@ -11,7 +11,7 @@ export const RentalSoundPage = () => {
         <div className="rentalpage">
             <Header />
             <RentalSearchComp data={ SoundData } />
-            <h1 className="h2">ALL RESULTS</h1>
+            <h1 className="titles">ALL RESULTS</h1>
             {SoundData.map((data, index) => (
                 <ReusableRentalComp
                 key={data.index}
