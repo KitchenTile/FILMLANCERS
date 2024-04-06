@@ -18,39 +18,25 @@ const RentalSearchComp = ({ data }) => {
 
     
     return (
-        <div >
-            <div className="box">
-                <input 
+        <div>
+            <div className="box2">
+                {/* <input 
                     type="text"
                     placeholder="Search..."
                     className="input"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                />
+                /> */}
+                <form name="search">
+                    <input
+                        type="text"
+                        placeholder="🔎︎"
+                        className="input"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
+                </form>
             </div>
-            {/* {filteredData.length > 0 ? (
-                filteredData.map((item, index) => (
-                <div key={index}>
-                    <h1>{item.name}</h1>
-                    <a href={item.link}>
-                        <h1>{item.link}</h1>
-                    </a>
-                    <div>
-                        <iframe 
-                        src={item.map}
-                        width="850"
-                        height="450"
-                        style={{border:"0"}}
-                        allowfullscreen="true"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        /> 
-                    </div>
-                </div>
-                ))
-            ) : (
-                <div>No results found</div>
-            )} */}
             {query !== "" ? (<h1 className="titles">SEARCH RESULTS</h1>): null}
             {query !== "" && filteredData.length > 0 ? (
                 filteredData.map((item, index) => (
