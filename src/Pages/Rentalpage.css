@@ -1,0 +1,45 @@
+
+
+
+.rentalpage {
+    margin-top: 6.5em;
+    text-align: center;
+    color: white;
+  }
+
+.titles {
+    color: orange;
+    letter-spacing: 20px;
+    word-spacing: 20px;
+    margin: 40px;
+    font-size: 50px;
+    transition: letter-spacing 0.5s ease, word-spacing 0.5s ease;
+  }
+
+  .titles:hover{
+    letter-spacing: 10px;
+    word-spacing: 0px;
+  }
+
+  .titlesearchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+  .searchcontainer {
+    display: flex;
+    margin-right: 5%;
+    /* margin-top: 3%; */
+    align-items: center;
+  }
+
+  .titlecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  

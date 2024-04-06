@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Momcake Bold';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Momcake Bold'), url('./fonts/Momcake-Bold.woff') format('woff');
+    }
