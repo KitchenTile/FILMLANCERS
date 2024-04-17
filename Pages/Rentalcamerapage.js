@@ -26,6 +26,7 @@ export const RentalCameraPage = () => {
                     name={data.name}
                     link={data.link}
                     map={data.map}
+                    info={data.info}
                 />
             ))}
         </div>

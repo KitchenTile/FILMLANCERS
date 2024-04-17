@@ -10,7 +10,14 @@ export const RentalPropPage = () => {
     return(
         <div className="rentalpage">
             <Header />
-            <RentalSearchComp data={ PropData } />
+            <div className="titlesearchbar">
+                <div className="titlecontainer">
+                    <h1 className="titles">PROP RENTAL</h1>
+                </div>
+                <div className="searchcontainer">
+                    <RentalSearchComp data={ PropData } />
+                </div>
+            </div>
             <h1 className="titles">ALL RESULTS</h1>
             {PropData.map((data, index) => (
                 <ReusableRentalComp
@@ -19,6 +26,7 @@ export const RentalPropPage = () => {
                 name={data.name}
                 link={data.link}
                 map={data.map}
+                info={data.info}
             />
             ))}
 

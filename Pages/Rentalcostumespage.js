@@ -10,7 +10,14 @@ export const RentalCostumePage = () => {
     return(
         <div className="rentalpage">
             <Header />
-            <RentalSearchComp data={ CostumeData } />
+            <div className="titlesearchbar">
+                <div className="titlecontainer">
+                    <h1 className="titles">COSTUME RENTAL</h1>
+                </div>
+                <div className="searchcontainer">
+                    <RentalSearchComp data={ CostumeData } />
+                </div>
+            </div>
             <h1 className="titles">ALL RESULTS</h1>
             {CostumeData.map((data, index) => (
                 <ReusableRentalComp
@@ -19,6 +26,7 @@ export const RentalCostumePage = () => {
                     name={data.name}
                     link={data.link}
                     map={data.map}
+                    info={data.info}
                 />
             ))}
 

@@ -10,7 +10,14 @@ export const RentalSoundPage = () => {
     return(
         <div className="rentalpage">
             <Header />
-            <RentalSearchComp data={ SoundData } />
+            <div className="titlesearchbar">
+                <div className="titlecontainer">
+                    <h1 className="titles">SOUND RENTAL</h1>
+                </div>
+                <div className="searchcontainer">
+                    <RentalSearchComp data={ SoundData } />
+                </div>
+            </div>
             <h1 className="titles">ALL RESULTS</h1>
             {SoundData.map((data, index) => (
                 <ReusableRentalComp
@@ -19,6 +26,8 @@ export const RentalSoundPage = () => {
                 name={data.name}
                 link={data.link}
                 map={data.map}
+                info={data.info}
+
             />
             ))}
 
