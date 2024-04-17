@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Rentalcomp.css";
 
-const ReusableRentalComp = ({link, map, img }) => {
+const ReusableRentalComp = ({link, map, img, info }) => {
     // const [isHovered, setIsHovered] = useState(false);
 
     // const handleHoverYes = () => {
@@ -31,7 +31,7 @@ const ReusableRentalComp = ({link, map, img }) => {
                 {/* {isHovered && ( */}
                     <div className="content">
                         <div className="info">
-                            <a href={link}><h1>{link}</h1></a>
+                            <p>{info}</p>
                         </div>
                         <div className="reviews">
                             <h1>Reviews</h1>

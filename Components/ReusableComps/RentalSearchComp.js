@@ -20,13 +20,6 @@ const RentalSearchComp = ({ data }) => {
     return (
         <div>
             <div className="box2">
-                {/* <input 
-                    type="text"
-                    placeholder="Search..."
-                    className="input"
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                /> */}
                 <form name="search">
                     <input
                         type="text"
@@ -59,7 +52,7 @@ const RentalSearchComp = ({ data }) => {
                             {/* {isHovered && ( */}
                                 <div className="content">
                                     <div className="info">
-                                        <a href={item.link}><h1>{item.link}</h1></a>
+                                        <p>{item.info}</p>
                                     </div>
                                     <div className="reviews">
                                         <h1>Reviews</h1>
@@ -80,7 +73,7 @@ const RentalSearchComp = ({ data }) => {
                     </div>
                 ))
             ) : (
-                query === "" ? null : <div>No results found</div>
+                query === "" ? null : <div className="nrf">No results found</div>
             )}
         </div>
     );
