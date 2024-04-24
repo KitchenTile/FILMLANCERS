@@ -11,14 +11,14 @@ export const RentalCostumePage = () => {
         <div className="rentalpage">
             <Header />
             <div className="titlesearchbar">
-                <div className="titlecontainer">
+                {/* <div className="titlecontainer">
                     <h1 className="titles">COSTUME RENTAL</h1>
-                </div>
+                </div> */}
                 <div className="searchcontainer">
                     <RentalSearchComp data={ CostumeData } />
                 </div>
             </div>
-            <h1 className="titles">ALL RESULTS</h1>
+            <h1 className="titles">COSTUME RENTALS</h1>
             {CostumeData.map((data, index) => (
                 <ReusableRentalComp
                     key={data.index}

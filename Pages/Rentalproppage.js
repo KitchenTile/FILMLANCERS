@@ -11,14 +11,14 @@ export const RentalPropPage = () => {
         <div className="rentalpage">
             <Header />
             <div className="titlesearchbar">
-                <div className="titlecontainer">
-                    <h1 className="titles">PROP RENTAL</h1>
-                </div>
+                {/* <div className="titlecontainer">
+                    <h1 className="titles">ART DEPARTMENT RENTAL</h1>
+                </div> */}
                 <div className="searchcontainer">
                     <RentalSearchComp data={ PropData } />
                 </div>
             </div>
-            <h1 className="titles">ALL RESULTS</h1>
+            <h1 className="titles">ART DEPARTMENT RENTAL</h1>
             {PropData.map((data, index) => (
                 <ReusableRentalComp
                 key={data.index}

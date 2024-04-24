@@ -12,14 +12,14 @@ export const RentalLightingPage = () => {
         <div className="rentalpage">
             <Header />
             <div className="titlesearchbar">
-                <div className="titlecontainer">
+                {/* <div className="titlecontainer">
                     <h1 className="titles">LIGHTING RENTAL</h1>
-                </div>
+                </div> */}
                 <div className="searchcontainer">
                     <RentalSearchComp data={ LightingData } />
                 </div>
             </div>
-            <h1 className="titles">ALL RESULTS</h1>
+            <h1 className="titles">LIGHTING RENTALS</h1>
             {LightingData.map((data, index) => (
                 <ReusableRentalComp
                 key={data.index}

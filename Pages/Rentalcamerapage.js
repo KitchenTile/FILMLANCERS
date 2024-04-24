@@ -11,14 +11,14 @@ export const RentalCameraPage = () => {
         <div className="rentalpage">
             <Header />
             <div className="titlesearchbar">
-                <div className="titlecontainer">
+                {/* <div className="titlecontainer">
                     <h1 className="titles">CAMERA RENTAL</h1>
-                </div>
+                </div> */}
                 <div className="searchcontainer">
                     <RentalSearchComp data={CameraData} />
                 </div>
             </div>
-            <h1 className="titles">ALL RESULTS</h1>
+            <h1 className="titles">CAMERA RENTALS</h1>
             {CameraData.map((data, index) => (
                 <ReusableRentalComp
                     key={data.index}
@@ -27,6 +27,7 @@ export const RentalCameraPage = () => {
                     link={data.link}
                     map={data.map}
                     info={data.info}
+                    keywords={data.keywords}
                 />
             ))}
         </div>
