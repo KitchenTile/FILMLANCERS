@@ -32,7 +32,7 @@
         <div className={`${Headercss.headertit}`} style={{ fontSize: scrollPosition > 0 ? "2.5em" : "3.5em"}}>
              <h1 className={`${Headercss.headertitle}`}>
                  <a href="/" className={`${Headercss.headerlink}`}>
-                     FILMLANCERS.LON.COM
+                     FILMLANCERS
                  </a>
              </h1>
         </div>
