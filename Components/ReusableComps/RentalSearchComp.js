@@ -6,7 +6,8 @@ const RentalSearchComp = ({ data }) => {
     // const [isHovered, setIsHovered] = useState(false);
     
     const filteredData = data.filter(item =>
-        item.name.toLowerCase().includes(query.toLowerCase())
+        item.name.toLowerCase().includes(query.toLowerCase()) ||
+        item.keywords.toLowerCase().includes(query.toLowerCase())  
     );
 
     // const handleHoverYes = () => {
@@ -50,9 +51,9 @@ const RentalSearchComp = ({ data }) => {
                         
                         </a>
                             {/* {isHovered && ( */}
-                                <div className="content">
+                                <a className="content" href={item.link}>
                                     <div className="info">
-                                        <p>{item.info}</p>
+                                        <p className="info2">{item.info}</p>
                                     </div>
                                     <div className="reviews">
                                         <h1>Reviews</h1>
@@ -68,7 +69,7 @@ const RentalSearchComp = ({ data }) => {
                                             referrerpolicy="no-referrer-when-downgrade"
                                         /> 
                                     </div>
-                                </div>
+                                </a>
                             {/* )}  */}
                     </div>
                 ))

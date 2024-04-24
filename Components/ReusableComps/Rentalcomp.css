@@ -16,6 +16,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
 } 
 
 .map,
@@ -67,8 +68,12 @@
   transition: width 0.8s ease;
 }
 
+.content:hover .info:hover .info2{
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 
-.content:hover .map:hover ~ .info,
+/* .content:hover .map:hover ~ .info, */
 .content:hover .map:hover ~ .reviews,
 .content:hover .map:hover ~ .map,
 .content:hover .info:hover ~ .reviews,
@@ -78,7 +83,29 @@
   transition: width 0.8s ease;
 }
 
+.info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
 
+/* .info2-container {
+  text-align: left;
+  font-size: 30px;
+  color: orange;
+  max-width: 100%;
+} */
+
+.info2 {
+  font-size: 30px;
+    color: orange;
+  padding-left: 20px;
+  text-align: justify;
+  white-space: pre-wrap;
+  width: 550px;
+  opacity: 0.5;
+}
 
 .bar {
   border: 20px;
@@ -133,7 +160,7 @@
 .box2 {
   position: absolute;
   left: 90%;
-  top: 10%;
+  top: 10.8%;
 }
 
 .box2:hover input {
