@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Rentalcomp.css";
+import PlaceDetailsComponent from "./Placedetails";
 
 const RentalSearchComp = ({ data }) => {
     const [query, setQuery] = useState("");
@@ -9,6 +10,26 @@ const RentalSearchComp = ({ data }) => {
         item.name.toLowerCase().includes(query.toLowerCase()) ||
         item.keywords.toLowerCase().includes(query.toLowerCase())  
     );
+
+
+    const [scriptLoaded, setScriptLoaded] = useState(false);
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBmclYZIWcPFUVgd1W02LB3iPD8-y5_oAA&libraries=places`;
+        script.async = true;
+        script.defer = true;
+
+        script.onload = () => {
+        setScriptLoaded(true);
+        };
+
+        document.body.appendChild(script);
+
+        return () => {
+        document.body.removeChild(script);
+        };
+    }, []);
 
     // const handleHoverYes = () => {
     //     setIsHovered(true);
@@ -56,7 +77,9 @@ const RentalSearchComp = ({ data }) => {
                                         <p className="info2">{item.info}</p>
                                     </div>
                                     <div className="reviews">
-                                        <h1>Reviews</h1>
+                                        <div className="reviews">
+                                            {scriptLoaded && <PlaceDetailsComponent placeId={item.placeId}/>}
+                                        </div>
                                     </div>
                                     <div className="map">
                                         <iframe 
@@ -64,9 +87,9 @@ const RentalSearchComp = ({ data }) => {
                                             width="80%"
                                             height="70%"
                                             style={{border:"0"}}
-                                            allowfullscreen=""
+                                            allowFullScreen=""
                                             loading="lazy"
-                                            referrerpolicy="no-referrer-when-downgrade"
+                                            referrerPolicy="no-referrer-when-downgrade"
                                         /> 
                                     </div>
                                 </a>

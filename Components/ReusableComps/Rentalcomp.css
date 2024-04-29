@@ -19,19 +19,49 @@
   text-decoration: none;
 } 
 
+.reviews2 {
+  border: 4px solid;
+  border-color: black;
+  border-radius: 20px;
+  width: 550px;
+  height: 550px;
+  text-overflow: hidden;
+  opacity: 0.5;
+  color: orange;
+  font-size: 25px;
+}
+
 .map,
 .info,
 .reviews {
+  color: orange;
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 50%;
   height: 100%;
   opacity: 0; 
   transition: opacity 0.8s ease;
 }
 
+
+.reviews2 li {
+  padding: 0 0 15px;
+  font-size: 25px;
+}
+
+.reviews2 p{
+  color: white;
+}
+
+
+.reviews2 ul{
+  text-align: center;
+  font-size: 25px;
+  padding: 0 30px;
+  overflow-y: auto;
+  max-height: 270px;
+}
 
 .content:hover{
   background: rgba(0, 0, 0, 0.8);
@@ -71,6 +101,13 @@
 .content:hover .info:hover .info2{
   opacity: 1;
   transition: opacity 0.5s ease;
+}
+
+.content:hover .reviews:hover .reviews2{
+  opacity: 1;
+  background-color: black;
+  transition: opacity 0.5s ease;
+  transition: background-color 0.5 ease;
 }
 
 /* .content:hover .map:hover ~ .info, */
@@ -171,4 +208,29 @@
 
 .nrf{
   width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Color of the scrollbar handle on hover */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+}
+
+/* Handle on active state */
+::-webkit-scrollbar-thumb:active {
+  background-color: #333; /* Color of the scrollbar handle when clicked */
 }
