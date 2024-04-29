@@ -27,6 +27,8 @@ export const RentalPropPage = () => {
                 link={data.link}
                 map={data.map}
                 info={data.info}
+                placeId={data.placeId}
+
             />
             ))}
 

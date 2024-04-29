@@ -5,7 +5,9 @@ import Header from '../Components/Header/Header';
 import React from 'react';
 
 
+
 export const App = () => {
+
   return (
     <div className="App">
       <Header />
@@ -14,7 +16,7 @@ export const App = () => {
       </header>
       {/* <ImageHoverComponent /> */}
       <MainComponent />
-      
+
     </div>
 
   );
@@ -22,3 +24,4 @@ export const App = () => {
 
 
 export default App;
+

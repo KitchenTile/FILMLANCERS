@@ -21,13 +21,14 @@ export const RentalCameraPage = () => {
             <h1 className="titles">CAMERA RENTALS</h1>
             {CameraData.map((data, index) => (
                 <ReusableRentalComp
-                    key={data.index}
+                    key={index}
                     img={data.img}
                     name={data.name}
                     link={data.link}
                     map={data.map}
                     info={data.info}
                     keywords={data.keywords}
+                    placeId={data.placeId}
                 />
             ))}
         </div>
