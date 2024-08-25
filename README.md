@@ -1,0 +1,1 @@
+I made this app for a third year film project turned bussiness called Filmlancers. It's made on React and it probably won't run because it seems like there are some empty files. I can't be bothered to update the whole thing again.
